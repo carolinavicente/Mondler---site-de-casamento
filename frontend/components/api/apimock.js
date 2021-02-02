@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import lshelper from '~/helpers/localstoragehelper.js'
 
 var logged_user = null;
 
@@ -47,30 +48,33 @@ const api = {
         });
     },
     mensagem (author_name, text) {
-        return mockasync({
+        var m = {
             author_name: author_name,
             text: text
-        })
+        }
+        lshelper.addmessage(m)
+        return mockasync(m)
     },
     list_mensagens(){
-        return mockasync([
-            {
-                author_name: 'Ross Geller',
-                text: 'My best friend and my sister!!'
-            },
-            {
-                author_name: 'Phoebe Buffay',
-                text: 'You guys are each others lobsters <3'
-            },
-            {
-                author_name: 'Joey Tribbiani',
-                text: 'Its a love based on giving, recieving, having and sharing.'
-            },
-            {
-                author_name: 'Rachel Greene',
-                text: 'I can think of no two people better prepared for this journey :)'
-            }
-        ])
+        return mockasync (lshelper.getmessages())
+        // return mockasync([
+        //     {
+        //         author_name: 'Ross Geller',
+        //         text: 'My best friend and my sister!!'
+        //     },
+        //     {
+        //         author_name: 'Phoebe Buffay',
+        //         text: 'You guys are each others lobsters <3'
+        //     },
+        //     {
+        //         author_name: 'Joey Tribbiani',
+        //         text: 'Its a love based on giving, recieving, having and sharing.'
+        //     },
+        //     {
+        //         author_name: 'Rachel Greene',
+        //         text: 'I can think of no two people better prepared for this journey :)'
+        //     }
+        // ])
     },
     list_convidados(){
         return mockasync([

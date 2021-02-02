@@ -1,15 +1,15 @@
 <template>
   <div>
-    <confirmacaoteste></confirmacaoteste>
+    <confirma></confirma>
   </div>
 </template>
 
 <script>
-import confirmacaoteste from '~/components/confirmacaoteste.vue'
+import confirma from '~/components/confirma.vue'
 
 export default {
   components: {
-    confirmacaoteste
+    confirma
   },
   data () {
     return {}

@@ -25,11 +25,16 @@ export default {
             this.mensagens.push(mensagem)
         }
     },
-    asyncData() {
-        return AppApi.list_mensagens().then(result => {
-            return {
-                mensagens: result.data
-            }
+    // asyncData() {
+    //     return AppApi.list_mensagens().then(result => {
+    //         return {
+    //             mensagens: result.data
+    //         }
+    //     })
+    // },
+    mounted () {
+        AppApi.list_mensagens().then(result => {
+            this.mensagens = result.data
         })
     }
 }

@@ -5,10 +5,11 @@
       <v-btn :to="{name: 'fotos'}" flat dark ripple>Album de Fotos</v-btn>
       <v-btn :to="{name: 'mensagens'}" flat dark ripple>Mural de Mensagens</v-btn>
       <v-btn :to="{name: 'presenca'}" flat dark ripple>Confirma Presença</v-btn>
+      <v-btn :to="{name: 'mapa'}" flat dark ripple>Data e Endereço</v-btn>
+      <v-btn :to="{name: 'presente'}" flat dark ripple>Lista de Presentes</v-btn>
+      <v-btn :to="{name: 'hotel'}" flat dark ripple>Dicas e Sugestões</v-btn>
     </div>
     <v-spacer></v-spacer>
-    <!-- <v-btn v-if="!logged_user" flat dark ripple class="ma-0 ml-5"  @click="open_login_dialog($event)">Login</v-btn> -->
-    <!-- <v-btn v-if="logged_user" flat dark ripple :to="{name: 'pagtesteapagar'}">Hellow</v-btn> -->
     <v-menu v-if="logged_user" offset-y>
       <v-btn icon slot="activator" class="ma-0 ml-5">
         <v-avatar size="36px">

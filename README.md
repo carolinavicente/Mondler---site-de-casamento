@@ -1,3 +1,22 @@
+# Projeto --- BUSER CAMP 2021.
+
+BEM-VINDO AO SITE DE CASAMENTO DE UM DOS MELHORES CASAIS DA HISTÓRIA DA TELEVISÃO:
+# CHANDLER E MONICA, de FRIENDS <3
+
+O site inclui:
+- fotos do casal
+- mural de recados onde os convidados podem deixar mensagens carinhosas aos noivos
+- espaço para os convidados confirmarem sua presença (à prova de penetras e espertalhôes tentando burlar o sistema)
+- data/horário e mapa do local do evento para ninguém se perder
+- links para listas virtuais de presentes em 3 lojas
+- dicas de hotel e salão de beleza para os convidados de fora.
+
+Espero que gostem! =)
+
+
+
+
+
 # 1. Dev-env, super-easy mode (docker all things)
 
 Requirements:
